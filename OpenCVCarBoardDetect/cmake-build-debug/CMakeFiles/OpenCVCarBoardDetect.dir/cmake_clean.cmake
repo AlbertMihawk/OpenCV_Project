@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OpenCVCarBoardDetect.dir/main.cpp.o"
+  "CMakeFiles/OpenCVCarBoardDetect.dir/PlateRecognize.cpp.o"
+  "CMakeFiles/OpenCVCarBoardDetect.dir/PlateLocate.cpp.o"
+  "CMakeFiles/OpenCVCarBoardDetect.dir/SobelLocate.cpp.o"
   "OpenCVCarBoardDetect.pdb"
   "OpenCVCarBoardDetect"
 )

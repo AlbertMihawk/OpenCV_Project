@@ -123,6 +123,87 @@ OpenCVCarBoardDetect/fast:
 	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/build
 .PHONY : OpenCVCarBoardDetect/fast
 
+PlateLocate.o: PlateLocate.cpp.o
+
+.PHONY : PlateLocate.o
+
+# target to build an object file
+PlateLocate.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateLocate.cpp.o
+.PHONY : PlateLocate.cpp.o
+
+PlateLocate.i: PlateLocate.cpp.i
+
+.PHONY : PlateLocate.i
+
+# target to preprocess a source file
+PlateLocate.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateLocate.cpp.i
+.PHONY : PlateLocate.cpp.i
+
+PlateLocate.s: PlateLocate.cpp.s
+
+.PHONY : PlateLocate.s
+
+# target to generate assembly for a file
+PlateLocate.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateLocate.cpp.s
+.PHONY : PlateLocate.cpp.s
+
+PlateRecognize.o: PlateRecognize.cpp.o
+
+.PHONY : PlateRecognize.o
+
+# target to build an object file
+PlateRecognize.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateRecognize.cpp.o
+.PHONY : PlateRecognize.cpp.o
+
+PlateRecognize.i: PlateRecognize.cpp.i
+
+.PHONY : PlateRecognize.i
+
+# target to preprocess a source file
+PlateRecognize.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateRecognize.cpp.i
+.PHONY : PlateRecognize.cpp.i
+
+PlateRecognize.s: PlateRecognize.cpp.s
+
+.PHONY : PlateRecognize.s
+
+# target to generate assembly for a file
+PlateRecognize.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/PlateRecognize.cpp.s
+.PHONY : PlateRecognize.cpp.s
+
+SobelLocate.o: SobelLocate.cpp.o
+
+.PHONY : SobelLocate.o
+
+# target to build an object file
+SobelLocate.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/SobelLocate.cpp.o
+.PHONY : SobelLocate.cpp.o
+
+SobelLocate.i: SobelLocate.cpp.i
+
+.PHONY : SobelLocate.i
+
+# target to preprocess a source file
+SobelLocate.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/SobelLocate.cpp.i
+.PHONY : SobelLocate.cpp.i
+
+SobelLocate.s: SobelLocate.cpp.s
+
+.PHONY : SobelLocate.s
+
+# target to generate assembly for a file
+SobelLocate.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenCVCarBoardDetect.dir/build.make CMakeFiles/OpenCVCarBoardDetect.dir/SobelLocate.cpp.s
+.PHONY : SobelLocate.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OpenCVCarBoardDetect"
+	@echo "... PlateLocate.o"
+	@echo "... PlateLocate.i"
+	@echo "... PlateLocate.s"
+	@echo "... PlateRecognize.o"
+	@echo "... PlateRecognize.i"
+	@echo "... PlateRecognize.s"
+	@echo "... SobelLocate.o"
+	@echo "... SobelLocate.i"
+	@echo "... SobelLocate.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
