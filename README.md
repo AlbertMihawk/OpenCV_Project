@@ -32,7 +32,7 @@ target_link_libraries(OpenCVDemo
 ## Compile On Xcode
 Run: cmake -G "Xcode" .
 
-- OpenCVXcodeDemo : run OpenCV on Xcode
+- OpenCVDemoXcode : run OpenCV on Xcode
 - OpenCVDemoCli : run OpenCV on Command Line
 - OpenCVFaceDetect
   1. Detect Faces
