@@ -35,7 +35,7 @@ Run: cmake -G "Xcode" .
 - OpenCVXcodeDemo : run OpenCV on Xcode
 - OpenCVDemoCli : run OpenCV on Command Line
 - OpenCVFaceDetect
-  1.Detect Faces
-  2.Tracking Faces
+  1. Detect Faces
+  2. Tracking Faces
   
 
