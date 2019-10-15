@@ -238,16 +238,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571110067273</updated>
-      <workItem from="1571110068601" duration="17480000" />
+      <workItem from="1571110068601" duration="17694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17480000" />
+    <option name="totallyTimeSpent" value="17694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="28" width="1267" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21142857" />
@@ -255,12 +254,12 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" weight="0.30029586" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32988167" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="CMake" weight="0.329582" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988167" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
