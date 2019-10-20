@@ -11,7 +11,7 @@
 
 
 int main() {
-    Mat src = imread("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/car5.jpg", IMREAD_COLOR);
+    Mat src = imread("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/pic/car5.jpg", IMREAD_COLOR);
 //    imshow("src", src);
 
     PlateRecognize pr;

@@ -124,16 +124,16 @@ OpenCVCarBoardDetect: CMakeFiles/OpenCVCarBoardDetect.dir/PlateRecognize.cpp.o
 OpenCVCarBoardDetect: CMakeFiles/OpenCVCarBoardDetect.dir/PlateLocate.cpp.o
 OpenCVCarBoardDetect: CMakeFiles/OpenCVCarBoardDetect.dir/SobelLocate.cpp.o
 OpenCVCarBoardDetect: CMakeFiles/OpenCVCarBoardDetect.dir/build.make
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_highgui.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_video.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_objdetect.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_videoio.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_imgcodecs.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_calib3d.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_features2d.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_imgproc.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_flann.4.1.1.dylib
-OpenCVCarBoardDetect: /usr/local/lib/libopencv_core.4.1.1.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_highgui.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_video.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_objdetect.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_videoio.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_imgcodecs.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_calib3d.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_features2d.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_imgproc.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_flann.4.1.2.dylib
+OpenCVCarBoardDetect: /usr/local/lib/libopencv_core.4.1.2.dylib
 OpenCVCarBoardDetect: CMakeFiles/OpenCVCarBoardDetect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenCVCarBoardDetect"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenCVCarBoardDetect.dir/link.txt --verbose=$(VERBOSE)

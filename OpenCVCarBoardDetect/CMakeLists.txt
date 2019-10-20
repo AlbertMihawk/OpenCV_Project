@@ -5,9 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package(OpenCV REQUIRED)
 
-include_directories("/usr/local/Cellar/opencv/4.1.0_2/include/opencv4")
-link_libraries("/usr/local/Cellar/opencv/4.1.0_2/lib")
-
+include_directories("/usr/local/Cellar/opencv/4.1.2/include/opencv4")
+#link_libraries("/usr/local/Cellar/opencv/4.1.2/lib")
 
 add_executable(OpenCVCarBoardDetect main.cpp PlateRecognize.cpp PlateRecognize.h common.h PlateLocate.cpp PlateLocate.h SobelLocate.cpp SobelLocate.h)
 
