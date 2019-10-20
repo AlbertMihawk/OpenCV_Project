@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OpenCVCarBoardDetect.iml" filepath="$PROJECT_DIR$/.idea/OpenCVCarBoardDetect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OpenCVDemo.iml" filepath="$PROJECT_DIR$/.idea/OpenCVDemo.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		27EDA9581F2748C3B987184C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D037EF13B2444C2B7C93BF0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				479FE8341CED42DF9A68F1B2 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E2B31F761D6E4367BF32817C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CC720BD0746F48F09168966D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				25637892B9CF4CDDB84BE162 /* CMake Rules */,
+			);
+			dependencies = (
+				22FA61B1479D443FA8415160 /* PBXTargetDependency */,
+				0BE60F0A5000497096E9AD12 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A7874E30813049EA8AB07CED /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/main.cpp */ = {isa = PBXBuildFile; fileRef = CB390E860EFD4129AECB5C6E /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/main.cpp */; };
+		F4A799C8EAD8438BBC7E55D4 /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 11D52332DBB247C3A9D1FC8C /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0382CB55766A49FD9A51CBDE /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		85D51BA3BA6D43D5910ACBA5 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		94212DC950F849928CD0399E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9C45CFBF20164BF28779E8C4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2B5EBC658B424977B604CB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15660DFA6F3F4B7F90395F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27EDA9581F2748C3B987184C;
+			remoteInfo = ZERO_CHECK;
+		};
+		7E905F21A42645B4AE5FE6EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15660DFA6F3F4B7F90395F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29E25DD676DE4ACF9AA43ACD;
+			remoteInfo = OpenCVDemo;
+		};
+		8797725D057441FABBD3FAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15660DFA6F3F4B7F90395F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27EDA9581F2748C3B987184C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021111C65F9E45EFA2353F5B /* OpenCVDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = OpenCVDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D52332DBB247C3A9D1FC8C /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB390E860EFD4129AECB5C6E /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		F377C0E4979B4B8D96FC45A5 /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3C104B5822564A0CB02243EA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB390E860EFD4129AECB5C6E /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5752F23832E34529BE2CE1B5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				81DB9EBA6075407B86CD990D /* CMake Rules */,
+				F377C0E4979B4B8D96FC45A5 /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		81DB9EBA6075407B86CD990D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8DCD7CA3358F496C8A80BA31 = {
+			isa = PBXGroup;
+			children = (
+				DD83306AE6B64EA585C914EB /* OpenCVDemo */,
+				5752F23832E34529BE2CE1B5 /* ALL_BUILD */,
+				B6326F1C70AB442CBF5244D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6326F1C70AB442CBF5244D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				021111C65F9E45EFA2353F5B /* OpenCVDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD83306AE6B64EA585C914EB /* OpenCVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3C104B5822564A0CB02243EA /* Source Files */,
+				11D52332DBB247C3A9D1FC8C /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeLists.txt */,
+			);
+			name = OpenCVDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29E25DD676DE4ACF9AA43ACD /* OpenCVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECABBD5B5D9E45ADB0F6145F /* Build configuration list for PBXNativeTarget "OpenCVDemo" */;
+			buildPhases = (
+				93FCD6AE909644CBBEEB9E7A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0352AF350A442468A237907 /* PBXTargetDependency */,
+			);
+			name = OpenCVDemo;
+			productName = OpenCVDemo;
+			productReference = 021111C65F9E45EFA2353F5B /* OpenCVDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15660DFA6F3F4B7F90395F47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = AA22190E9BE545229D679595 /* Build configuration list for PBXProject "OpenCVDemo" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9C45CFBF20164BF28779E8C4 /* Debug */,
+				94212DC950F849928CD0399E /* Release */,
+				0382CB55766A49FD9A51CBDE /* MinSizeRel */,
+				85D51BA3BA6D43D5910ACBA5 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8DCD7CA3358F496C8A80BA31;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				E2B31F761D6E4367BF32817C /* ALL_BUILD */,
+				29E25DD676DE4ACF9AA43ACD /* OpenCVDemo */,
+				27EDA9581F2748C3B987184C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25637892B9CF4CDDB84BE162 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo -f /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		2651A83882AA471B8E1A9A03 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		479FE8341CED42DF9A68F1B2 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo -f /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		FD4CF76402B74CD6B20002B5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93FCD6AE909644CBBEEB9E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7874E30813049EA8AB07CED /* /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BE60F0A5000497096E9AD12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27EDA9581F2748C3B987184C /* ZERO_CHECK */;
+			targetProxy = 2B5EBC658B424977B604CB49 /* PBXContainerItemProxy */;
+		};
+		22FA61B1479D443FA8415160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29E25DD676DE4ACF9AA43ACD /* OpenCVDemo */;
+			targetProxy = 7E905F21A42645B4AE5FE6EF /* PBXContainerItemProxy */;
+		};
+		C0352AF350A442468A237907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27EDA9581F2748C3B987184C /* ZERO_CHECK */;
+			targetProxy = 8797725D057441FABBD3FAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B9C8BAF49B46C6B075489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1ECE3AD5F3A3448EA28AAE88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/build;
+			};
+			name = Debug;
+		};
+		282D151D28224735A5258AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/build;
+			};
+			name = Release;
+		};
+		2A95259B372343E8AFDD1181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		31DC0EAA96104553B646469B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		334E2DCF85FB4EC7AC100C10 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3DBC9D276BCA4DFBA24564EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4431E69C518047A691926802 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/Cellar/opencv/4.1.0_2/include/opencv4);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_highgui.4.1.1.dylib /usr/local/lib/libopencv_video.4.1.1.dylib /usr/local/lib/libopencv_videoio.4.1.1.dylib /usr/local/lib/libopencv_imgcodecs.4.1.1.dylib /usr/local/lib/libopencv_calib3d.4.1.1.dylib /usr/local/lib/libopencv_features2d.4.1.1.dylib /usr/local/lib/libopencv_imgproc.4.1.1.dylib /usr/local/lib/libopencv_flann.4.1.1.dylib /usr/local/lib/libopencv_core.4.1.1.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OpenCVDemo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include/opencv4);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		750E08E815D94C1DBFA392D8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/build;
+			};
+			name = RelWithDebInfo;
+		};
+		89124D2DE2E6488C91637DE7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9B426F9AFFDC4AE0BF07227B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C199E7F34A534328B80422A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C971A8440A9E465E96EDE652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/Cellar/opencv/4.1.0_2/include/opencv4);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_highgui.4.1.1.dylib /usr/local/lib/libopencv_video.4.1.1.dylib /usr/local/lib/libopencv_videoio.4.1.1.dylib /usr/local/lib/libopencv_imgcodecs.4.1.1.dylib /usr/local/lib/libopencv_calib3d.4.1.1.dylib /usr/local/lib/libopencv_features2d.4.1.1.dylib /usr/local/lib/libopencv_imgproc.4.1.1.dylib /usr/local/lib/libopencv_flann.4.1.1.dylib /usr/local/lib/libopencv_core.4.1.1.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OpenCVDemo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include/opencv4);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D31D829B641048C2AB4D8178 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo/build;
+			};
+			name = MinSizeRel;
+		};
+		E0FFF71EB69E4892AB98D96D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/Cellar/opencv/4.1.0_2/include/opencv4);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_highgui.4.1.1.dylib /usr/local/lib/libopencv_video.4.1.1.dylib /usr/local/lib/libopencv_videoio.4.1.1.dylib /usr/local/lib/libopencv_imgcodecs.4.1.1.dylib /usr/local/lib/libopencv_calib3d.4.1.1.dylib /usr/local/lib/libopencv_features2d.4.1.1.dylib /usr/local/lib/libopencv_imgproc.4.1.1.dylib /usr/local/lib/libopencv_flann.4.1.1.dylib /usr/local/lib/libopencv_core.4.1.1.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OpenCVDemo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include/opencv4);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F24824BDEEA94DDC80EBB3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/Cellar/opencv/4.1.0_2/include/opencv4);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/lib/libopencv_highgui.4.1.1.dylib /usr/local/lib/libopencv_video.4.1.1.dylib /usr/local/lib/libopencv_videoio.4.1.1.dylib /usr/local/lib/libopencv_imgcodecs.4.1.1.dylib /usr/local/lib/libopencv_calib3d.4.1.1.dylib /usr/local/lib/libopencv_features2d.4.1.1.dylib /usr/local/lib/libopencv_imgproc.4.1.1.dylib /usr/local/lib/libopencv_flann.4.1.1.dylib /usr/local/lib/libopencv_core.4.1.1.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = OpenCVDemo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xiaoxu/Documents/code_develop/OpenCVMacDemo;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include/opencv4);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D037EF13B2444C2B7C93BF0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DC0EAA96104553B646469B /* Debug */,
+				2A95259B372343E8AFDD1181 /* Release */,
+				89124D2DE2E6488C91637DE7 /* MinSizeRel */,
+				3DBC9D276BCA4DFBA24564EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA22190E9BE545229D679595 /* Build configuration list for PBXProject "OpenCVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ECE3AD5F3A3448EA28AAE88 /* Debug */,
+				282D151D28224735A5258AD2 /* Release */,
+				D31D829B641048C2AB4D8178 /* MinSizeRel */,
+				750E08E815D94C1DBFA392D8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CC720BD0746F48F09168966D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B9C8BAF49B46C6B075489F /* Debug */,
+				C199E7F34A534328B80422A2 /* Release */,
+				334E2DCF85FB4EC7AC100C10 /* MinSizeRel */,
+				9B426F9AFFDC4AE0BF07227B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECABBD5B5D9E45ADB0F6145F /* Build configuration list for PBXNativeTarget "OpenCVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24824BDEEA94DDC80EBB3E0 /* Debug */,
+				C971A8440A9E465E96EDE652 /* Release */,
+				E0FFF71EB69E4892AB98D96D /* MinSizeRel */,
+				4431E69C518047A691926802 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15660DFA6F3F4B7F90395F47 /* Project object */;
+}
