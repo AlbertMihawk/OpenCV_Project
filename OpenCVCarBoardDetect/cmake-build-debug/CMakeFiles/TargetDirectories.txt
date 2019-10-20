@@ -1,3 +1,0 @@
-/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/cmake-build-debug/CMakeFiles/OpenCVCarBoardDetect.dir

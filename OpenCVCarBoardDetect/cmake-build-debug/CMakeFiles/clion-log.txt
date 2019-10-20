@@ -1,5 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect
--- Configuring done
-WARNING: Target "OpenCVCarBoardDetect" requests linking to directory "/usr/local/Cellar/opencv/4.1.2/lib".  Targets may link only to libraries.  CMake is dropping the item.
--- Generating done
--- Build files have been written to: /Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/cmake-build-debug
