@@ -7,12 +7,17 @@
 
 PlateRecognize::PlateRecognize() {
     sobelLocate = new SobelLocate();
+    colorLocate = new ColorLocate();
 }
 
 PlateRecognize::~PlateRecognize() {
     if (sobelLocate) {
         delete sobelLocate;
         sobelLocate = 0;
+    }
+    if (colorLocate) {
+        delete colorLocate;
+        colorLocate = 0;
     }
 }
 
@@ -22,12 +27,18 @@ PlateRecognize::~PlateRecognize() {
  * @return
  */
 string PlateRecognize::recognize(Mat src) {
+
     //1.车牌定位
     //sobel定位
-    vector<Mat> dst_plates;
-    sobelLocate->locate(src, dst_plates);
+    imshow("origin", src);
+//    vector<Mat> sobel_plates;
+//    sobelLocate->locate(src, sobel_plates);
 
-    return string("12345");
+    //2.HSV颜色定位
+    vector<Mat> color_plates;
+    colorLocate->locate(src, color_plates);
+
+    return string(" ");
 }
 
 

@@ -11,14 +11,12 @@
 
 
 int main() {
-    Mat src = imread("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/pic/car5.jpg", IMREAD_COLOR);
-//    imshow("src", src);
+    Mat src = imread("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/pic/car1.jpg", IMREAD_COLOR);
+    imshow("src", src);
 
     PlateRecognize pr;
     string str_plate = pr.recognize(src);
-    cout << "车牌：" << str_plate <<endl;
-
-    waitKey(0);
+    cout << "车牌：" << str_plate << endl;
 
     return 0;
 }

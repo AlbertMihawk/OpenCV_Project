@@ -96,6 +96,7 @@ void PlateLocate::tortuosity(Mat src, vector<RotatedRect> &rects, vector<Mat> &d
 
         dst_plates.push_back(plate_mat);
         dst.release();
+        plate_mat.release();
     }
 }
 

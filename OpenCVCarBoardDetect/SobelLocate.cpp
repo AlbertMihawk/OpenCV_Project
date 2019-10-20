@@ -18,12 +18,12 @@ SobelLocate::~SobelLocate() {
  * @param dst_plates
  */
 void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
+    //图像预处理
     //1.高斯模糊
     Mat blur;
     //Ksize:both must be positive and odd,正数的奇数
     //半径越大越模糊
     GaussianBlur(src, blur, Size(5, 5), 0);
-    imshow("origin", src);
 //    imshow("Gauss", blur);
     //2.灰度化
     Mat gray;
@@ -44,6 +44,8 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
 
     //4.二值化（非黑即白）
     Mat shold;
+    //THRESH_OTSU 大律法 自适应阈值
+    //THRESH_BINARY 正二值化（还有反）
     threshold(sobel, shold, 0, 255, THRESH_OTSU + THRESH_BINARY);
 //    imshow("shold", shold);
 
@@ -52,7 +54,7 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
     Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
     morphologyEx(shold, close, MORPH_CLOSE, element);
-    imshow("close", close);
+    imshow("sobel_close", close);
 
     //6.找轮廓
     vector<vector<Point>> contours;
@@ -64,24 +66,39 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     vector<RotatedRect> vec_sobel_rects;
 
     //7.遍历判断矩形
+    Mat src_clone = src.clone();
+/** 另一种方式的矩形遍历i
+    vector<vector<Point>>::iterator it = contours.begin();
+    while (it != contours.end()) {
+        rotatedRect = minAreaRect(*it);//带角度的矩形
+        rectangle(src_clone, rotatedRect.boundingRect(), Scalar(0, 0, 255));
+        if (verifySizes(rotatedRect)) {
+            vec_sobel_rects.push_back(rotatedRect);
+            ++it;
+        }else{
+            it = contours.erase(it);
+        }
+    }
+    return;*/
+
     for (vector<Point> points :contours) {
         rotatedRect = minAreaRect(points);//带角度的矩形
-        rectangle(src, rotatedRect.boundingRect(), Scalar(0, 0, 255));
+        rectangle(src_clone, rotatedRect.boundingRect(), Scalar(0, 0, 255));
         if (verifySizes(rotatedRect)) {
             vec_sobel_rects.push_back(rotatedRect);
         }
     }
 
     for (RotatedRect rect :vec_sobel_rects) {
-        rectangle(src, rect.boundingRect(), Scalar(0, 255, 0));
+        rectangle(src_clone, rect.boundingRect(), Scalar(0, 255, 0));
     }
-//    imshow("轮廓图", src);
+    imshow("sobel_bound", src_clone);
     //8.矩形矫正
     //角度判断，旋转，调整大小
 
     tortuosity(src, vec_sobel_rects, dst_plates);
     for (Mat m :dst_plates) {
-        imshow("定位候选车牌", m);
+        imshow("plate", m);
         waitKey();
     }
 

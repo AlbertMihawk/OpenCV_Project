@@ -10,6 +10,7 @@
 #include <string>
 #include "common.h"
 #include "SobelLocate.h"
+#include "ColorLocate.h"
 
 class PlateRecognize {
 public:
@@ -21,6 +22,7 @@ public:
     string recognize(Mat src);
 private:
     SobelLocate *sobelLocate = 0;
+    ColorLocate *colorLocate = 0;
 };
 
 
