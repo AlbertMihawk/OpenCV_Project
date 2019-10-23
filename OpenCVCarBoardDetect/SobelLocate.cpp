@@ -54,7 +54,7 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
     Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
     morphologyEx(shold, close, MORPH_CLOSE, element);
-    imshow("sobel_close", close);
+//    imshow("sobel_close", close);
 
     //6.找轮廓
     vector<vector<Point>> contours;
@@ -92,7 +92,7 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     for (RotatedRect rect :vec_sobel_rects) {
         rectangle(src_clone, rect.boundingRect(), Scalar(0, 255, 0));
     }
-    imshow("sobel_bound", src_clone);
+//    imshow("sobel_bound", src_clone);
     //8.矩形矫正
     //角度判断，旋转，调整大小
 

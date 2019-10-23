@@ -5,10 +5,10 @@
 #include "PlateRecognize.h"
 
 
-PlateRecognize::PlateRecognize() {
+PlateRecognize::PlateRecognize(const char* svm_model) {
     sobelLocate = new SobelLocate();
     colorLocate = new ColorLocate();
-    svmPredict = new SvmPredict();
+    svmPredict = new SvmPredict(svm_model);
 }
 
 PlateRecognize::~PlateRecognize() {
@@ -35,7 +35,6 @@ string PlateRecognize::recognize(Mat src) {
 
     //1.车牌定位
     //sobel定位
-    imshow("origin", src);
     vector<Mat> sobel_plates;
     sobelLocate->locate(src, sobel_plates);
 
@@ -64,6 +63,7 @@ string PlateRecognize::recognize(Mat src) {
     //候选车牌里面有两类车牌和非车牌
     //对候选车牌进行精选，SVM：用来分类
     Mat plate;
+    //找到最有可能是车牌的图
     int index = svmPredict->doPredict(plates, plate);
 
     return string(" ");

@@ -6,11 +6,12 @@
 #define OPENCVCARBOARDDETECT_SVMPREDICT_H
 
 #include "common.h"
+//机器学习 machine learning
 
 
 class SvmPredict {
 public:
-    SvmPredict();
+    SvmPredict(const char *svm_model);
 
     ~SvmPredict();
 
@@ -22,7 +23,12 @@ public:
      * @return
      */
     int doPredict(vector<Mat> candi_plates, Mat &plate);
+private:
+    Ptr<SVM> svm;
 
+    HOGDescriptor *svmHog = 0;
+
+    void getHogFeatures(HOGDescriptor *svmHog, Mat src, Mat &dst);
 };
 
 

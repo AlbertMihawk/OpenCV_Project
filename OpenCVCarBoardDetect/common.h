@@ -9,6 +9,7 @@
 
 using namespace std;
 using namespace cv;
+using namespace ml;
 
 
 #endif //OPENCVCARBOARDDETECT_COMMON_H

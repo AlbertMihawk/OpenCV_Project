@@ -17,4 +17,5 @@ target_link_libraries(OpenCVCarBoardDetect
         opencv_core
         opencv_highgui
         opencv_video
-        opencv_objdetect)
+        opencv_objdetect
+        opencv_ml)

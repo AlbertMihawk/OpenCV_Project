@@ -17,7 +17,7 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
     //1.目前是BGR颜色空间，转换成HSV
     Mat hsv;
     cvtColor(src, hsv, COLOR_BGR2HSV);
-    imshow("hsv", hsv);
+//    imshow("hsv", hsv);
     //2.找蓝色像素:h(100-124),s(43-255),v(46-255)
     int channels = hsv.channels();
     int width = hsv.rows;

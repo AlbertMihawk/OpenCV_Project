@@ -15,12 +15,13 @@
 
 class PlateRecognize {
 public:
-    PlateRecognize();
+    PlateRecognize(const char *svm_model);
 
     //没有加入虚函数，因为没有作为父类
     ~PlateRecognize();
 
     string recognize(Mat src);
+
 private:
     SobelLocate *sobelLocate = 0;
     ColorLocate *colorLocate = 0;

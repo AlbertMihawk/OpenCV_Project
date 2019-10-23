@@ -14,7 +14,7 @@ int main() {
     Mat src = imread("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/pic/car1.jpg", IMREAD_COLOR);
     imshow("src", src);
 
-    PlateRecognize pr;
+    PlateRecognize pr("/Users/xiaoxu/Documents/OpenCV_Project/OpenCVCarBoardDetect/train/svm.xml");
     string str_plate = pr.recognize(src);
     cout << "车牌：" << str_plate << endl;
 
