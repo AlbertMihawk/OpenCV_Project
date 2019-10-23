@@ -11,6 +11,7 @@
 #include "common.h"
 #include "SobelLocate.h"
 #include "ColorLocate.h"
+#include "SvmPredict.h"
 
 class PlateRecognize {
 public:
@@ -23,6 +24,7 @@ public:
 private:
     SobelLocate *sobelLocate = 0;
     ColorLocate *colorLocate = 0;
+    SvmPredict *svmPredict = 0;
 };
 
 

@@ -98,8 +98,8 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
 
     tortuosity(src, vec_sobel_rects, dst_plates);
     for (Mat m :dst_plates) {
-        imshow("plate", m);
-        waitKey();
+//        imshow("plate", m);
+//        waitKey();
     }
 
 

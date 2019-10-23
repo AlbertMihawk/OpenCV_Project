@@ -8,6 +8,7 @@
 PlateRecognize::PlateRecognize() {
     sobelLocate = new SobelLocate();
     colorLocate = new ColorLocate();
+    svmPredict = new SvmPredict();
 }
 
 PlateRecognize::~PlateRecognize() {
@@ -18,6 +19,10 @@ PlateRecognize::~PlateRecognize() {
     if (colorLocate) {
         delete colorLocate;
         colorLocate = 0;
+    }
+    if (svmPredict) {
+        delete svmPredict;
+        svmPredict = 0;
     }
 }
 
@@ -31,12 +36,35 @@ string PlateRecognize::recognize(Mat src) {
     //1.车牌定位
     //sobel定位
     imshow("origin", src);
-//    vector<Mat> sobel_plates;
-//    sobelLocate->locate(src, sobel_plates);
+    vector<Mat> sobel_plates;
+    sobelLocate->locate(src, sobel_plates);
 
     //2.HSV颜色定位
     vector<Mat> color_plates;
     colorLocate->locate(src, color_plates);
+
+    //候选车牌2合1
+    vector<Mat> plates;
+    plates.insert(plates.begin(), sobel_plates.begin(), sobel_plates.end());
+    plates.insert(plates.end(), color_plates.begin(), color_plates.end());
+
+    for (Mat m:sobel_plates) {
+        m.release();
+    }
+    for (Mat m:color_plates) {
+        m.release();
+    }
+    char windowName[100];
+    for (size_t i = 0; i < plates.size(); i++) {
+        sprintf(windowName,"%zd 候选车牌", i);
+        imshow(windowName, plates[i]);
+        waitKey();
+    }
+
+    //候选车牌里面有两类车牌和非车牌
+    //对候选车牌进行精选，SVM：用来分类
+    Mat plate;
+    int index = svmPredict->doPredict(plates, plate);
 
     return string(" ");
 }

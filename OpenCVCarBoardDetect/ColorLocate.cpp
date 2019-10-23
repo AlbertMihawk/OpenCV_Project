@@ -71,7 +71,7 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
     Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
     morphologyEx(hsv_split[2], close, MORPH_CLOSE, element);
-    imshow("hsv_close", close);
+//    imshow("hsv_close", close);
 
     //6.找轮廓
     vector<vector<Point>> contours;
@@ -94,14 +94,14 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
     for (RotatedRect rect :vec_sobel_rects) {
         rectangle(src, rect.boundingRect(), Scalar(0, 255, 0));
     }
-    imshow("color_bound", src);
+//    imshow("color_bound", src);
     //8.矩形矫正
     //角度判断，旋转，调整大小
 
     tortuosity(src, vec_sobel_rects, dst_plates);
     for (Mat m :dst_plates) {
-        imshow("color_plate", m);
-        waitKey();
+//        imshow("color_plate", m);
+//        waitKey();
     }
 
     for (Mat m:hsv_split) {

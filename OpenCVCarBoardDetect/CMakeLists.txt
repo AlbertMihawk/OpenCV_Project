@@ -10,7 +10,7 @@ include_directories("/usr/local/Cellar/opencv/4.1.2/include/opencv4")
 
 file(GLOB src_files *.cpp)
 
-add_executable(OpenCVCarBoardDetect ${src_files})
+add_executable(OpenCVCarBoardDetect ${src_files} SvmPredict.cpp SvmPredict.h)
 
 target_link_libraries(OpenCVCarBoardDetect
         opencv_videoio
