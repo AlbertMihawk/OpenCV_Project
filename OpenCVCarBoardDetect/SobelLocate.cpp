@@ -52,7 +52,7 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     //5.形态学操作：闭操作
     Mat close;
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
-    Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
+    Mat element = getStructuringElement(MORPH_RECT, Size(13, 7));
     morphologyEx(shold, close, MORPH_CLOSE, element);
 //    showAndWrite("sobel_close", close);
 

@@ -80,7 +80,7 @@ string PlateRecognize::recognize(Mat src) {
 
 
     plate.release();
-    return string(" ");
+    return str_plate;
 }
 
 

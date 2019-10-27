@@ -29,7 +29,18 @@ private:
 
     void getHogFeatures(HOGDescriptor *hog, Mat src, Mat &dst);
 
-    bool clearMaoDing(Mat shold);
+    bool clearMaoDing(Mat plate);
+
+    bool verifyCharSize(Mat plate);
+
+    int getCityIndex(vector<Rect> vector);
+
+    void getChineseRect(Rect city, Rect &chineseRect);
+
+    void predict(vector<Mat> vec, string &result);
+
+    static string ZHCHARS[];
+    static char CHARS[];
 };
 
 
