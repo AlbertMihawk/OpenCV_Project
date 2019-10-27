@@ -11,5 +11,7 @@ using namespace std;
 using namespace cv;
 using namespace ml;
 
+void showAndWrite(const string winName, Mat mat);
+
 
 #endif //OPENCVCARBOARDDETECT_COMMON_H

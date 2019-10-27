@@ -145,11 +145,11 @@ void PlateLocate::rotation(Mat src, Mat &dst, Size rect_size, Point2f center, do
     //矫正后 大小会不一样，但是对角线肯定能容纳
     int max = sqrt(pow(src.rows, 2) + pow(src.cols, 2));
     warpAffine(src, mat_rotated, rot_mat, Size(max, max), INTER_CUBIC);
-//    imshow("before rotate",src);
-//    imshow("after rotate",mat_rotated);
+//    showAndWrite("before rotate",src);
+//    showAndWrite("after rotate",mat_rotated);
     //截取 尽量吧车牌多余的区域截取掉
     getRectSubPix(mat_rotated, Size(rect_size.width, rect_size.height), center, dst);
-//    imshow("cut" ,dst);
+//    showAndWrite("cut" ,dst);
 //    waitKey();
 
     mat_rotated.release();

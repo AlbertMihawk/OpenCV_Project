@@ -5,10 +5,11 @@
 #include "PlateRecognize.h"
 
 
-PlateRecognize::PlateRecognize(const char* svm_model) {
+PlateRecognize::PlateRecognize(const char *svm_model, const char *ann_model, const char *ann_model_zh) {
     sobelLocate = new SobelLocate();
     colorLocate = new ColorLocate();
     svmPredict = new SvmPredict(svm_model);
+    annPredict = new AnnPredict(ann_model, ann_model_zh);
 }
 
 PlateRecognize::~PlateRecognize() {
@@ -23,6 +24,10 @@ PlateRecognize::~PlateRecognize() {
     if (svmPredict) {
         delete svmPredict;
         svmPredict = 0;
+    }
+    if (annPredict) {
+        delete annPredict;
+        annPredict = 0;
     }
 }
 
@@ -44,7 +49,7 @@ string PlateRecognize::recognize(Mat src) {
 
     //候选车牌2合1
     vector<Mat> plates;
-    plates.insert(plates.begin(), sobel_plates.begin(), sobel_plates.end());
+    plates.insert(plates.end(), sobel_plates.begin(), sobel_plates.end());
     plates.insert(plates.end(), color_plates.begin(), color_plates.end());
 
     for (Mat m:sobel_plates) {
@@ -55,17 +60,26 @@ string PlateRecognize::recognize(Mat src) {
     }
     char windowName[100];
     for (size_t i = 0; i < plates.size(); i++) {
-        sprintf(windowName,"%zd 候选车牌", i);
-        imshow(windowName, plates[i]);
-        waitKey();
+        sprintf(windowName, "%zd candidate", i);
+//        showAndWrite(windowName, plates[i]);
+//        waitKey();
     }
 
     //候选车牌里面有两类车牌和非车牌
     //对候选车牌进行精选，SVM：用来分类
     Mat plate;
     //找到最有可能是车牌的图
+    //获取到唯一车牌
     int index = svmPredict->doPredict(plates, plate);
 
+    for (Mat m:plates) {
+        m.release();
+    }
+    //对图片进行字符识别
+    string str_plate = annPredict->doPredict(plate);
+
+
+    plate.release();
     return string(" ");
 }
 

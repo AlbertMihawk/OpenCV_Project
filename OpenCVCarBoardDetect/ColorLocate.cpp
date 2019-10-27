@@ -17,7 +17,7 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
     //1.目前是BGR颜色空间，转换成HSV
     Mat hsv;
     cvtColor(src, hsv, COLOR_BGR2HSV);
-//    imshow("hsv", hsv);
+//    showAndWrite("hsv", hsv);
     //2.找蓝色像素:h(100-124),s(43-255),v(46-255)
     int channels = hsv.channels();
     int width = hsv.rows;
@@ -58,20 +58,20 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
         }
     }
     //蓝色车漆不适合
-//    imshow("蓝色", hsv);
+//    showAndWrite("蓝色", hsv);
 
     //3.提取V分量颜色
     vector<Mat> hsv_split;
     //对图像进行通道分离
     split(hsv, hsv_split);
-//    imshow("splitV", hsv_split[2]);
+//    showAndWrite("splitV", hsv_split[2]);
 
     //5.形态学操作：闭操作
     Mat close;
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
     Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
     morphologyEx(hsv_split[2], close, MORPH_CLOSE, element);
-//    imshow("hsv_close", close);
+//    showAndWrite("hsv_close", close);
 
     //6.找轮廓
     vector<vector<Point>> contours;
@@ -94,13 +94,13 @@ void ColorLocate::locate(Mat src, vector<Mat> &dst_plates) {
     for (RotatedRect rect :vec_sobel_rects) {
         rectangle(src, rect.boundingRect(), Scalar(0, 255, 0));
     }
-//    imshow("color_bound", src);
+//    showAndWrite("color_bound", src);
     //8.矩形矫正
     //角度判断，旋转，调整大小
 
     tortuosity(src, vec_sobel_rects, dst_plates);
     for (Mat m :dst_plates) {
-//        imshow("color_plate", m);
+//        showAndWrite("color_plate", m);
 //        waitKey();
     }
 

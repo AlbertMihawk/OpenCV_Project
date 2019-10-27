@@ -24,37 +24,37 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     //Ksize:both must be positive and odd,正数的奇数
     //半径越大越模糊
     GaussianBlur(src, blur, Size(5, 5), 0);
-//    imshow("Gauss", blur);
+//    showAndWrite("Gauss", blur);
     //2.灰度化
     Mat gray;
     cvtColor(blur, gray, COLOR_BGR2GRAY);
-//    imshow("gray", gray);
+//    showAndWrite("gray", gray);
 
     //3.sobel运算
     Mat sobel_16;
     //输入
     //Sobel函数求导后，导数可能得值会大于255，或小于0
     Sobel(gray, sobel_16, CV_16S, 1, 0);
-//    imshow("sobel_16",sobel_16);//无法显示
+//    showAndWrite("sobel_16",sobel_16);//无法显示
     //转回8位
     Mat sobel;
 
     convertScaleAbs(sobel_16, sobel);
-//    imshow("sobel", sobel);//无法显示,需要进行转换
+//    showAndWrite("sobel", sobel);//无法显示,需要进行转换
 
     //4.二值化（非黑即白）
     Mat shold;
     //THRESH_OTSU 大律法 自适应阈值
     //THRESH_BINARY 正二值化（还有反）
     threshold(sobel, shold, 0, 255, THRESH_OTSU + THRESH_BINARY);
-//    imshow("shold", shold);
+//    showAndWrite("shold", shold);
 
     //5.形态学操作：闭操作
     Mat close;
 //    Mat element = getStructuringElement(MORPH_RECT, Size(80, 30));//car4
     Mat element = getStructuringElement(MORPH_RECT, Size(19, 3));
     morphologyEx(shold, close, MORPH_CLOSE, element);
-//    imshow("sobel_close", close);
+//    showAndWrite("sobel_close", close);
 
     //6.找轮廓
     vector<vector<Point>> contours;
@@ -92,13 +92,13 @@ void SobelLocate::locate(Mat src, vector<Mat> &dst_plates) {
     for (RotatedRect rect :vec_sobel_rects) {
         rectangle(src_clone, rect.boundingRect(), Scalar(0, 255, 0));
     }
-//    imshow("sobel_bound", src_clone);
+//    showAndWrite("sobel_bound", src_clone);
     //8.矩形矫正
     //角度判断，旋转，调整大小
 
     tortuosity(src, vec_sobel_rects, dst_plates);
     for (Mat m :dst_plates) {
-//        imshow("plate", m);
+//        showAndWrite("plate", m);
 //        waitKey();
     }
 
